@@ -1,0 +1,28 @@
+{
+  "name": "three-typescript-template",
+  "version": "1.0.0",
+  "author": {
+    "email": "nicolaskevinleguiza@gmail.com",
+    "name": "Kevin Leguiza Gaggero",
+    "url": "https://github.com/KevinNicolas"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently yarn:watch:*",
+    "watch:build": "nodemon -e ts -x 'yarn build' -i node_modules",
+    "watch:serve": "node live-server.config.js",
+    "build": "node esbuild.config.js"
+  },
+  "dependencies": {
+    "three": "^0.142.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "@types/three": "^0.141.0",
+    "concurrently": "^7.3.0",
+    "esbuild": "^0.14.49",
+    "live-server": "^1.2.2",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.7.4"
+  }
+}

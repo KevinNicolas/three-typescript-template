@@ -1,0 +1,27 @@
+{
+  "name": "three-typescript-template",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "gitUsername": "Kevin-Leguiza-Gaggero",
+      "gitEmail": "nicolaskevinleguiza@gmail.com",
+      "sshFileName": "docker-key"
+    }
+  },
+  "shutdownAction": "stopContainer",
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "2gua.rainbow-brackets",
+    "ExodiusStudios.comment-anchors",
+    "usernamehw.errorlens",
+    "ms-vscode.vscode-typescript-next",
+    "ritwickdey.LiveServer",
+    "yandeu.five-server"
+  ],
+  "postCreateCommand": "yarn"
+}
