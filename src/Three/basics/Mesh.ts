@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { GLTFLoader } from "@Three/loaders";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 export const createCube = (size: number, material: THREE.Material = new THREE.MeshNormalMaterial()) => {
   const geometry = new THREE.BoxGeometry(size, size, size);

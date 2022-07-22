@@ -1,4 +1,4 @@
-import { createBasicScenario, createCube } from "@Three";
+import { createBasicScenario, createCube } from "./Three";
 
 (async () => {
   console.info("Init..");
