@@ -25,7 +25,7 @@ export const createPerspectiveCamera = (
     fov: 70,
     near: 1,
   };
-  const { x, y, z } = cameraPosition ?? { x: 0, y: 0, z: 1 };
+  const { x, y, z } = cameraPosition ?? { x: 0, y: 0, z: 5 };
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   if (x) camera.position.x = x;
   if (y) camera.position.y = y;
